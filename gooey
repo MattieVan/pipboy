@@ -4,8 +4,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-
 from tkinter import *
 
 root = Tk()
@@ -19,23 +17,23 @@ var.set("Pip Boy")
 root.configure(background='black')
 label_one.pack()
 
-f = Frame(height=50, width=150)
+f = Frame(height=50, width=300)
 f.pack_propagate(0)
 f.pack()
 
 b = Button(f,
-         text="Button 1",
+         text="Heart Rate Monitor",
          bg="grey",
          fg="green2",
          font=("Courier", 20, "bold"))
 b.pack(fill=BOTH, expand=1)
 
-f2 = Frame(height=50, width=150)
+f2 = Frame(height=50, width=200)
 f2.pack_propagate(1)
 f2.pack()
 
 b2 = Button(f2,
-        text="Button 2",
+        text="Games",
         bg = "grey",
         fg = "green2",
         font=("Courier", 20, "bold"))
@@ -43,4 +41,3 @@ b2.pack(fill=BOTH, expand=1)
 
 
 root.mainloop()
-
